@@ -52,9 +52,10 @@ var titleblog = getQueryVariable('title').replace(/%20/g, " ");
 </script>
 <div class="contact-box">
   <script>
-var fill = "Punya Pertanyaan, Saran, dan Kritikan ? Silahkan Tanya di Form ini. Kami Akan Menjawab Lewat Email Secepatnya";
+var fill = document.querySelector('h4');
+fill.innerHTML='Punya Pertanyaan, Saran, dan Kritikan ? Silahkan Tanya di Form ini. Kami Akan Menjawab Lewat Email Secepatnya';
 document.write('\<h2>'+titleblog+'</h2>\
-<h4>'+fill+'</h4>\');
+
 </script>
 <script>
 document.write('\
