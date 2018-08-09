@@ -49,12 +49,13 @@ var emailform = getQueryVariable("email");
 var urlthanks = getQueryVariable("url");
 var urlblog = getQueryVariable("blog");
 var titleblog = getQueryVariable('title').replace(/%20/g, " ");
+var fill ="Punya Pertanyaan, Saran, dan Kritikan ? Silahkan Tanya di Form ini. Kami Akan Menjawab Lewat Email Secepatnya";
 </script>
 <div class="contact-box">
   
 <script>
 document.write('<h2>'+titleblog+'</h2>\
-<h4></h4>\
+<h4>'fill'</h4>\
 <form action="https://formspree.io/'+ emailform +'" method="POST" target="_blank" name="sentMessage" id="contactForm">\
 <input type="hidden" name="_next" value="'+ urlthanks +'" />\
     <div class="styled-input">\
