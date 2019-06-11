@@ -1,3 +1,16 @@
-<html><body>
-<div id='related-post'>&lt;amp-iframe src=&#39;https://cdn.staticaly.com/gh/ManKoin/Hosting/accd1946/relatedpostssl.html?labels=<b:loop values='data:post.labels' var='label'><data:label.name/><b:if cond='data:label.isLast != &quot;true&quot;'>,</b:if></b:loop>&amp;num=5&amp;url=https://faranramdan.blogspot.com&amp;pos=<data:post.url.canonical/>&#39; frameborder=&#39;0&#39; height=&#39;420&#39; layout=&#39;fixed-height&#39; sandbox=&#39;allow-scripts allow-same-origin allow-popups&#39;&gt;&lt;/amp-iframe&gt;</div>
-</body></html>
+<html><style>
+  #related-posts {background:#fff;font-size:16px;margin:0;padding:20px;}
+#related-posts h3 {text-align:left;font-size:140%;color:#666;margin:0;padding:0}
+  </style><body>
+<b:if cond='data:blog.pageType == &quot;item&quot;'> 
+<b:if cond="data:post.labels"> 
+<b:loop index="x" values="data:post.labels" var="label"> <b:if cond="data:x==0"> 
+<div id="related-posts">
+<h3>
+Artikel Terkait</h3>
+<amp-iframe expr:src="&quot;https://cdn.rawgit.com/WebsiteMini/html/39110edf/relatedpostamp.html?url=https://warim.blogspot.com&amp;colortitle=000000&amp;colordesc=000000&amp;back=ffffff&amp;item=both&amp;style=thumbnail&amp;label=&quot; + data:label.name" frameborder="0" height="420" layout="fixed-height" sandbox="allow-scripts allow-same-origin allow-modals allow-popups"> </amp-iframe> </div>
+</b:if></b:loop>
+<div class="clear">
+</div>
+</b:if></b:if>
+  </body></html>
