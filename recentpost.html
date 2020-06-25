@@ -1,10 +1,1 @@
-
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
-<amp-iframe expr:src='&quot;https://cdn.staticaly.com/gh/KompiAjaib/kompi-html/master/recentpost-amp.html?fontSize=16px&amp;color=333&amp;url=&quot; + data:blog.homepageUrl' frameborder='0' height='488' layout='fixed-height' noloading='' sandbox='allow-forms allow-scripts allow-same-origin allow-modals allow-popups' title='Recent Posts'>
-    <amp-img height='488' layout='fixed-height' noloading='' placeholder='' src='https://1.bp.blogspot.com/-x1yVa6ztsWY/WyHFPLG0uLI/AAAAAAAAyIg/3C5Lb5EjGywOPzO_XSwK1XTu6VlBZE4SgCLcBGAs/s1600/back-iframe.png' width='auto'>
-    </amp-img>
-  </amp-iframe>
+<!--Related Post Blogs Goblog--> <b:if cond='data:blog.pageType == &quot;item&quot;'> <div class='label-line-blogs'> <p class='share-this-blogs'>Related Post</p> </div> <b:loop values='data:post.labels' var='label'><b:if cond='data:label.isLast == &quot;true&quot;'><amp-iframe expr:src='&quot;https://cdn.statically.io/gh/dulbjn/Html/e625d955/relatedpostamp.html?fontSize=16px&amp;color=333&amp;url=https://www.yukisore.com/&amp;label=&quot; + data:label.name' frameborder='0' height='532.84' layout='fixed-height' sandbox='allow-scripts allow-same-origin allow-modals allow-popups'> <amp-img height='532.84' layout='fixed-height' noloading='' placeholder='' src='https://cdn.staticaly.com/img/1.bp.blogspot.com/-x1yVa6ztsWY/WyHFPLG0uLI/AAAAAAAAyIg/3C5Lb5EjGywOPzO_XSwK1XTu6VlBZE4SgCLcBGAs/s1600/back-iframe.png' width='auto'> </amp-img></amp-iframe></b:if></b:loop> </b:if>
